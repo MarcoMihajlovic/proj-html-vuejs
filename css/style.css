@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-width: 900px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 1070px;
+    min-width: 900px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.between > ul > li {
+    list-style: none;
+    display: inline;
+    height: 40px;
+}
+
+.spaceHeader {
+    display: inline;
+}
+
+.spaceHeader:hover {
+    cursor: pointer;
+}
+
+.icons {
+    margin-left: 60px;
+}
+
+.menu:nth-child(5) .menuBox a strong {
+    border-bottom: 3px solid #f2b71d;
+}
+
+.menu {
+    display: flex;
+    height: 30px;
+}
+.menuBox {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuBox > a {
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+}
+
+.redNew {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 10px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+}
+
+.menu:nth-child(3) .menuBox .redNew {
+    display: flex;
+}
+
+.banner {
+    width: 100%;
+    min-width: 900px;
+    height: 600px;
+    background-image: url('../img/slide-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.bannerText {
+    position: absolute;
+    width: 350px;
+    left: 800px;
+    top: 150px;
+}
+
+.bannerText h1 {
+    font-size: 40px;
+}
+
+.bannerText p {
+    font-size: 15px;
+}
+
+.saleBanner {
+    position: relative;
+    background-color: #ebb024;
+    height: 150px;
+    width: 1000px;
+    bottom: -490px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.saleBannerLeft {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    color: black;
+    flex-direction: column;
+}
+
+.emailBar {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.saleBannerLeft input, .saleBannerLeft button {
+    padding: 15px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.saleBannerLeft input {
+    width: 85%;
+    margin-left: 10px;
+    padding-right: 50px;
+}
+
+.saleBannerLeft button {
+    position: absolute;
+    right: 10px;
+    background-color: #0d2229;
+    color: white;
+}
+
+.saleBannerRight {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.infoLeft {
+    max-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.infoRight {
+    max-width: 50%;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.background {
+    background-color: #bcbcbc;
+    width: 100%;
+}

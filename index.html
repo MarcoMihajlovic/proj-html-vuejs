@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        
+        <header>
+            <div class="container between">
+                <img :src="logo_path" alt="">
+                <div class="between">
+                    <div class="menu" v-for="n in menu">
+                        <div class="menuBox">
+                            <a href="#"><strong class="spaceHeader">{{n}}</strong></a>
+                            <div class="redNew">
+                                <span>NEW</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="icons">
+                        <li v-for="(icon, index) in icons">
+                            <i class="spaceHeader" :class="icons[index]"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Banner -->
+            <div class="banner">
+                <div class="bannerText">
+                    <h1>Start your Human <span style="color: #f2b71d;">Revolution</span> today</h1>
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which i enjoy with my whole heart</p>
+                </div>
+                <div class="saleBanner">
+                    <div class="saleBannerLeft">
+                        <span style="font-size: 25px; margin: 0 auto;"><strong style="color: white;">Limited Sale: </strong>All courses with 55% off</span>
+                        <div class="emailBar">
+                            <input placeholder="Enter your email" type="email">
+                            <button>Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="saleBannerRight">
+                        <div style="display: flex; justify-content: center; align-items: center; flex-flow: column;">
+                            <h1 style="color: white; font-size: 40px;">26</h1>
+                            <span style="color: black; font-size: 20px;">Days</span>
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center; flex-flow: column;">
+                            <h1 style="color: white; font-size: 40px;">01</h1>
+                            <span style="color: black; font-size: 20px;">Hours</span>
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center; flex-flow: column;">
+                            <h1 style="color: white; font-size: 40px;">47</h1>
+                            <span style="color: black; font-size: 20px;">Minutes</span>
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center; flex-flow: column;">
+                            <h1 style="color: white; font-size: 40px;">33</h1>
+                            <span style="color: black; font-size: 20px;">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fine Banner -->
+            
+            <!-- Inizio Info -->
+            <div class="container">
+                <div class="info">
+                    <div class="infoLeft">
+                        <h2>Hey there, my name is John Doe. I'm the founder of the Brain Academy</h2>
+                        <img style="margin-top: 30px;" src="img/sign-184x108.jpg" alt="">
+                    </div>
+                    <div class="infoRight">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos praesentium deserunt saepe dolor facere libero, nostrum placeat suscipit quidem tempore, adipisci molestias. Accusantium, dolorum consequuntur ratione facilis nobis ipsa totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam mollitia eaque aspernatur laboriosam! Ut ipsa, ducimus corporis doloribus beatae voluptatibus velit, numquam ad, dicta eligendi accusamus? Nulla saepe vero magni!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Fine Info -->
+            <div class="background">
+                <div class="container">
+                    <h1 style="text-align: center; margin-top: 20px;">New Courses</h1>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
