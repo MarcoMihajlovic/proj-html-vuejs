@@ -95,11 +95,17 @@ header {
     position: relative;
 }
 
+.banner > .container  {
+    position: relative;
+    height: 100%;
+}
+
 .bannerText {
     position: absolute;
     width: 350px;
-    left: 800px;
+    right: 0;
     top: 150px;
+    z-index: 100;
 }
 
 .bannerText h1 {
@@ -115,7 +121,7 @@ header {
     background-color: #ebb024;
     height: 150px;
     width: 1000px;
-    bottom: -490px;
+    bottom: 105px;
     margin: 0 auto;
     display: flex;
     align-items: center;
