@@ -301,3 +301,57 @@ header {
 .courseInfo span i {
     color: #ebb024;
 }
+
+.loadMore {
+    background-color: #f2b71d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+.loadMore:hover {
+    background-color:  #ebb024;
+}
+
+.backgroundBook {
+    width: 100%;
+    height: 450px;
+    background-image: url('../img/slider_1-1917x607-1914x606.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.backgroundBook .container > img {
+    position: absolute;
+    width: 400px;
+    bottom: 0;
+    left: 50%;
+}
+
+.bookText {
+    position: absolute;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 500px;
+    font-size: 40px;
+}
+
+.bookText > p {
+    color: white;
+    font-size: 20px;
+    font-style: oblique;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bookText > img {
+    margin-top: 20px;
+    width: 200px;
+}
