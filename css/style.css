@@ -157,7 +157,7 @@ header {
 .saleBannerLeft button {
     position: absolute;
     right: 10px;
-    background-color: #0d2229;
+    background-color: #03609f;
     color: white;
 }
 
@@ -197,4 +197,107 @@ header {
 .background {
     background-color: #bcbcbc;
     width: 100%;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cardImage {
+    position: relative;
+    height: 162px;
+}
+
+.cardImage img {
+    width: 300px;
+}
+
+.cardImageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 60%;
+    z-index: 1;
+    display: none;
+}
+
+.specialBox {
+    position: absolute;
+    width: 70px;
+    height: 25px;
+    background-color: #ebb024;
+    color: white;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 2;
+    line-height: 25px;
+}
+
+.costBox {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: none;
+}
+
+.card:hover .costBox, .card:hover .cardImageOverlay {
+    display: block;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    background-color: white;
+}
+
+.cardInfo {
+    height: 238px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.cardInfo span {
+    font-size: 17px;
+}
+
+.cardInfo p {
+    margin-top: 15px;
+    color: grey;
+}
+
+
+.card hr {
+    width: 90%;
+    margin: 10px auto;
+    background-color: grey;   
+}
+
+.courseInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.courseInfo span {
+    font-size: 13px;
+}
+
+.courseInfo span i {
+    color: #ebb024;
 }
