@@ -324,9 +324,12 @@ header {
 .backgroundSlide {
     width: 100%;
     height: 450px;
-    background-image: url('../img/slider_1-1917x607-1914x606.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.slideOne {
+    background-image: url('../img/slider_1-1917x607-1914x606.jpg');
     position: relative;
 }
 
@@ -402,4 +405,26 @@ header {
 
 .box:hover > .boxInnerLeft > i {
     color: white;
+}
+
+.slideTwo {
+    background-image: url('../img/counter-1919x1101.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 0 20%;
+}
+
+.socialBox {
+    height: 75px;
+    max-width: 200pxs;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0 30px;
+}
+
+.socialBox > i {
+    font-size: 35px;
+    margin-right: 20px;
 }
