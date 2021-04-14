@@ -485,3 +485,62 @@ header {
     line-height: 30px;
     margin-bottom: 50px;
 }
+
+footer {
+    width: 100%;
+    background-color: #ebb024;
+}
+
+.footerFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerWidth {
+    width: 250px;
+    padding: 50px 0;
+}
+
+.footerWidth > h2 {
+    margin-bottom: 40px;
+}
+
+.footerWidth > p {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.about > i {
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.about > i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.pages > ul > li:hover p {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.article {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 75px;
+    margin: 20px 0;
+}
+
+.article > img {
+    max-width: 75px;
+    margin-right: 20px;
+}
+
+.articleText > p {
+    color: grey;
+    font-size: 15px;
+}

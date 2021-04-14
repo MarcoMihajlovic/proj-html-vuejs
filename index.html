@@ -378,6 +378,45 @@
                 </div>
             </div>
             <!-- Fine sezione Students -->
+
+            <footer>
+                <div class="container footerFlex">
+                    <div class="about footerWidth">
+                        <h2>{{about.name}} </h2>
+                        <p>{{about.description}}</p>
+                        <p>{{about.developed}}</p>
+                        <i v-for="icon in about.icons" :class="icon"></i>
+                    </div>
+
+                    <div class="contact footerWidth">
+                        <h2>{{contact.name}}</h2>
+                        <p>{{contact.address}}</p>
+                        <span>{{contact.tel}}</span> <br>
+                        <span>{{contact.fax}}</span>
+                        <p>{{contact.mail}}</p>
+                    </div>
+
+                    <div class="pages footerWidth">
+                        <h2>{{pages.name}}</h2>
+                        <ul>
+                            <li v-for="page in pages.page"><p>{{page}}</p></li>
+                        </ul>
+                    </div>
+
+                    <div class="blog footerWidth">
+                        <h2>{{blog.name}}</h2>
+                        <div class="articles">
+                            <div v-for="article in blog.articles" class="article">
+                                <img :src="article.img" alt="">
+                                <div class="articleText">
+                                    <h4>{{article.title}}</h4>
+                                    <p>{{article.date}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </main>
     </div>
     <script src="js/script.js"></script>
