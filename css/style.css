@@ -16,7 +16,7 @@ header {
     left: 0;
     right: 0;
     z-index: 100;
-    padding-top: 20px;
+    padding: 20px 0;
     margin-bottom: 20px;
     background-color: white;
 }
@@ -43,8 +43,9 @@ header {
     margin-left: 16px;
 }
 
-.spaceHeader:hover {
+.space:hover {
     cursor: pointer;
+    color: #ebb024;
 }
 
 .icons {
@@ -70,6 +71,10 @@ header {
     text-decoration: none;
     color: black;
     margin-left: 15px;
+}
+
+.menuBox > a:hover {
+    color: #ebb024;
 }
 
 .redNew {
