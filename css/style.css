@@ -522,7 +522,7 @@ footer {
     margin: 5px 0;
 }
 
-.about > i {
+/* .about > i {
     text-align: center;
     margin: 10px 20px;
 }
@@ -533,6 +533,22 @@ footer {
 }
 
 .pages > ul > li:hover p {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+} */
+
+.footerBox > i {
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.footerBox > i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.footerBox > ul > li:hover p {
     color: white;
     cursor: pointer;
     text-decoration: underline;

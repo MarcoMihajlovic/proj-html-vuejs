@@ -229,9 +229,33 @@
 
             <footer>
                 <div class="container footerFlex">
-                    <div class="about footerWidth">
+
+                    <div v-for="box in footerBoxes" class="footerBox footerWidth">
+                        <h2>{{box.name}} </h2>
+                        <p v-if="box.description">{{box.description}}</p>
+                        <p v-if="box.developed">{{box.developed}}</p>
+                        <i v-for="icon in box.icons" :class="icon"></i>
+                        <p v-if="box.address">{{box.address}}</p>
+                        <span v-if="box.tel">{{box.tel}}</span> <br v-if="box.tel">
+                        <span v-if="box.fax">{{box.fax}}</span>
+                        <p v-if="box.mail">{{box.mail}}</p>
+                        <ul v-if="box.page">
+                            <li v-for="page in box.page"><p>{{page}}</p></li>
+                        </ul>
+                        <div v-if="box.articles" class="articles">
+                            <div v-for="article in box.articles" class="article">
+                                <img :src="article.img" alt="">
+                                <div class="articleText">
+                                    <h4>{{article.title}}</h4>
+                                    <p>{{article.date}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="footerBox footerWidth">
                         <h2>{{about.name}} </h2>
-                        <p>{{about.description}}</p>
+                        <p v-if>{{about.description}}</p>
                         <p>{{about.developed}}</p>
                         <i v-for="icon in about.icons" :class="icon"></i>
                     </div>
@@ -262,7 +286,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </footer>
         </main>
